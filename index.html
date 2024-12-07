@@ -42,17 +42,20 @@
                 <ul>
                     <li><a href="index.html">
                             <span class="icon"><i class="fas fa-book"></i></span>
-                            <span class="title" style="font-weight: bolder;">Eredmények</span>
+                            <span class="title" style="font-weight: bolder;">Live Scores</span>
                         </a></li>
                     <li><a href="tierlist.html">
                             <span class="icon"><i class="fas fa-volleyball-ball"></i></span>
-                            <span class="title" style="font-weight: bolder;">Tier Lista</span>
+                            <span class="title" style="font-weight: bolder;">Tier List</span>
+                        </a></li>
+                    <li><a href="javascript:void(0)" id="tournaments-btn">
+                            <span class="icon"><i class="fa-solid fa-video"></i></span>
+                            <span class="title" style="font-weight: bolder;">Tournaments</span>
                         </a></li>
                     <li><a href="highlights.html">
                             <span class="icon"><i class="fa-solid fa-video"></i></span>
-                            <span class="title" style="font-weight: bolder;">Highlights</span>
+                            <span class="title" style="font-weight: bolder;">Epic Moments</span>
                         </a></li>
-
                 </ul>
             </div>
         </div>
@@ -139,41 +142,72 @@
     <section id="bracket">
         <br><br>
         <div style="display: flex; justify-content: center; align-items: center; border: 2px solid orangered;">
-            <h1 style="color: orangered; font-size: 30px;">
-                GOALS:</h1>
+            <h1 style="color: orangered; font-size: 30px;">GOALS:</h1>
         </div>
         <br><br>
-        <div class="container round2">
-            <div>
-                <ul>
-                    <h1 style="color: orangered;">Quarter finals:</h1>
-                    <li>
-                        <span style="color: green;">Northern</span> 2 - 0 Santi
-                        <br>
-                        <span style="color: green;">Magnus</span> 5 - 1 Northern
-                        <br>
-                        <span style="color: green;">Magnus</span> 6 - 2 Santi
-                        <br>
-                        <span style="color: green;">Magnus</span> 2 - 1 Waka
-                        <br>
-                        <span style="color: green;">Northern</span> 5 - 4 Waka
-                        <br>
-                        <span>Santi</span> 5 - 5 Waka
-                        <br>
-                        <span style="color: green;">Kubu</span> 2 - 1 Magnus
-                        <br>
-                        <span style="color: green;">Northern</span> 1 - 0 Kubu
-                    </li>
-                    <br>
-                    <h1></h1>
+        <div class="round2" style="display: flex; flex-direction: column; align-items: center;">
+            <div style="display: flex; gap: 75px; justify-content: center;">
+
+                <div>
+                    <h1 style="color: orangered; text-align: center;">Quarter finals:</h1>
+                    <ul>
+                        <li>
+                            <span style="color: green;">Northern</span> 2 - 0 Santi
+                            <br>
+                            <span style="color: green;">Magnus</span> 5 - 1 Northern
+                            <br>
+                            <span style="color: green;">Magnus</span> 6 - 2 Santi
+                            <br>
+                            <span style="color: green;">Magnus</span> 2 - 1 Waka
+                            <br>
+                            <span style="color: green;">Northern</span> 5 - 4 Waka
+                            <br>
+                            <span>Santi</span> 5 - 5 Waka
+                            <br>
+                            <span style="color: green;">Kubu</span> 2 - 1 Magnus
+                            <br>
+                            <span style="color: green;">Northern</span> 1 - 0 Kubu
+                        </li>
+                    </ul>
+                </div>
 
 
+                <!-- 
+                <div>
+                    <h1 style="color: orangered; text-align: center;">Semi finals:</h1>
+                    <ul>
+                        <li>
+                            <span style="color: green;"></span>
+                            <br>
 
-                </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h1 style="color: orangered; text-align: center;">Bronze match:</h1>
+                    <ul>
+                        <li>
+                            <span style="color: green;"></span>
+                            <br>
+
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h1 style="color: orangered; text-align: center;">Gold match:</h1>
+                    <ul>
+                        <li>
+                            <span style="color: green;"></span>
+                            <br>
+
+                        </li>
+                    </ul>
+                </div> -->
             </div>
         </div>
     </section>
-
 
 
     <section class="share">
@@ -182,3 +216,15 @@
             <a class="share-icon" href="#"><i class=""></i></a>
         </div>
     </section>
+</body>
+
+<!-- Modal -->
+<div id="modal1" class="modal1">
+    <div class="modal-content" style="display: flex; justify-content: center; flex-direction: column;">
+        <h1 style="font-size: 100px; color: #fff;">Coming soon...i guess</h1>
+        <button class="modal-close" id="close-btn"
+            style="font-size: 50px; display: flex; justify-content: center;">Close</button>
+    </div>
+</div>
+
+<script src="main.js"></script>

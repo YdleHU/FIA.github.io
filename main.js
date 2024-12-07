@@ -20,3 +20,26 @@ window.addEventListener('keydown', function (e) {
         closeModal();
     }
 });
+
+
+// Second Modal
+const modal1 = document.getElementById('modal1');
+const tournamentsBtn = document.getElementById('tournaments-btn');
+const closeBtn = document.getElementById('close-btn');
+
+// Gomb kattintás eseménye
+tournamentsBtn.addEventListener('click', () => {
+    modal1.style.display = 'flex'; // Modal megjelenítése
+});
+
+// Modal bezárás gomb kattintás eseménye
+closeBtn.addEventListener('click', () => {
+    modal1.style.display = 'none'; // Modal elrejtése
+});
+
+// Modal bezárása ha valaki a modal hátterére kattint
+window.addEventListener('click', (e) => {
+    if (e.target === modal) {
+        modal1.style.display = 'none'; // Modal elrejtése
+    }
+});
