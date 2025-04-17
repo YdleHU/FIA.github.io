@@ -609,6 +609,20 @@ body {
     padding: 10px;
 }
 
+#board2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 80vw;
+    height: 40vh;
+    padding: 10px;
+}
+
+#orderlist {
+    list-style: circle;
+}
+
 .instructions {
     width: 80vw;
     font-size: 15px;
