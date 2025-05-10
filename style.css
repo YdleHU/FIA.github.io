@@ -212,7 +212,7 @@ body {
     width: 100%;
     height: 80%;
     margin: 5px;
-    font-size: 24px;
+    font-size: 30px;
     font-weight: bolder;
     font-style: italic;
 }
@@ -615,12 +615,13 @@ body {
     align-items: center;
     justify-content: space-between;
     width: 80vw;
-    height: 40vh;
     padding: 10px;
 }
 
-#orderlist {
-    list-style: circle;
+.spin:hover {
+    background-color: #0077ff;
+    color: #fff;
+    transition: all 0.3s ease;
 }
 
 .instructions {
