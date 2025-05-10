@@ -17,6 +17,41 @@
     <title>Tierlist</title>
 </head>
 
+<style>
+    body {
+      background-color: #121212;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: white;
+      
+      height: 200vh;
+    }
+
+    table {
+      border: 2px solid orange;
+      border-collapse: collapse;
+      background-color: #000;
+      width: 500px;
+      text-align: center;
+      box-shadow: 0 0 20px orange;
+    }
+
+    th, td {
+      padding: 15px;
+      border: 1px solid orange;
+    }
+
+    th {
+      background-color: #222;
+      color: orange;
+      font-size: 1.2em;
+      text-transform: uppercase;
+    }
+
+    tr:hover {
+      background-color: #1a1a1a;
+    }
+</style>
+
 <body>
     <header class="hero" style="backdrop-filter: blur(10px);">
         <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
@@ -81,13 +116,188 @@
         <div id="board2" style="display: flex; font-size: 30px; color: #fff; text-align: left;">
             <h1 id="title" style="color: orangered; font-size: 42px; font-style: italic; font-weight: bolder;">Rules
             </h1>
+            
             <p>A II. FC 24 bajnokság szabályai:</p>
-            <h1>
-                Work in Progress...
-            </h1>
-
-
-
+            <h5 style="color: yellow;">Subject to Change</h1>
+            <br>
+            <h3>Bannolt csapatok:</h3>
+            <h5>
+                <ul style="color: red;">
+                    <li>Al Ittihad</li>
+                    <li>Al Nassr</li>
+                    <li>AS Monaco</li>
+                    <li>Bologna</li>
+                    <li>Dalian Professional</li>
+                </ul>
+            </h5>
+            <p>A Bannolt csapatokat semmilyen körülmények között nem szabad hozni!</p>
+            <br>
+            <h3>Korlátozott csapatok (4* , 4.5* , 5*):</h3>
+            <h5>
+                <ul style="color: orange;">
+                    <li>Fiorentina</li>
+                    <li>Benfica</li>
+                    <li>FC Porto</li>
+                    <li>Galatasaray</li>
+                    <li>Atalanta BC</li>
+                    <br>
+                    <li>Juventus</li>
+                    <li>Borussia Dortmund</li>
+                    <li>Tottenham Hotspur</li>
+                    <li>Manchester United</li>
+                    <li>Inter</li>
+                    <li>Arsenal</li>
+                    <br>
+                    <li>Liverpool</li>
+                    <li>Atlético de Madrid</li>
+                    <li>Bayern München</li>
+                    <li>FC Barcelona</li>
+                    <li>Real Madrid</li>
+                    <li>Manchester City</li>
+                    <li>Paris Saint-Germain</li>
+                </ul>
+            </h5>
+            <br>
+            <p>A Korlátozott csapatokat lehet hozni, ha a kipörgetett csillag és bármilyen más szabály ezt megengedi,
+                viszont a <a href="lootbox/lootbox.html" style="color: #0077ff; text-align: center;">
+                    <h1 class="spin" style="border: 2px outset #0077ff; box-shadow: 2px 2px 2px #0077ff; padding: 2px;">
+                        SPIN LOOT</h1>
+                </a>
+                -ban található játékost az adott csapathoz azt
+            <p style="color: red;">NEM</p> hozhatod, hanem le kell cserélni egy másik játékosra mindig.
+            <p>Ha az inventory-d rendelkezik a játékossal, akkor bármikor beteheted. Ez 1 meccsre érvényes!</p>
+            <p>Az inventory-ban megszerzett dolgok egyszer használhatóak fel és bármikor.</p>
+            <p>Ha már egy meglévő dolgot pörgettél ki újra, akkor az nem vész kárba, hanem stackel.</p>
+            <p>Az Inventory a 'Live Scores' oldalon található.</p>
+            <br>
+            <p style="color: #0077ff;">Pörgetésre akkor van jogod, ha egy meccset elbuksz. (1 lose -> 1 spin)</p>
+            <br>
+            <h2 style="color: orangered;">New patch Notes:</h2>
+            <h3>Tier Balance: (not final)</h3>
+            <p>FIA Ranking System:</p>
+            <br>
+            <table>
+                <tr>
+                  <th>Tier Kategória</th>
+                  <th>+ Win</th>
+                  <th>- Lose</th>
+                </tr>
+                <tr>
+                  <td>Tier S+</td>
+                  <td>+10 P</td>
+                  <td>-10 P</td>
+                </tr>
+                <tr>
+                  <td>Tier S</td>
+                  <td>+25 P</td>
+                  <td>-25 P</td>
+                </tr>
+                <tr>
+                  <td>Tier A</td>
+                  <td>+50 P</td>
+                  <td>-50 P</td>
+                </tr>
+                <tr>
+                  <td>Tier B</td>
+                  <td>+50 P</td>
+                  <td>-50 P</td>
+                </tr>
+                <tr>
+                  <td>Tier C</td>
+                  <td>+50 P</td>
+                  <td>-50 P</td>
+                </tr>
+                <tr>
+                  <td>Tier D</td>
+                  <td>+75 P</td>
+                  <td>-75 P</td>
+                </tr>
+                <tr>
+                  <td>Tier E</td>
+                  <td>+75 P</td>
+                  <td>-75 P</td>
+                </tr>
+            </table>
+            <br>
+            <h3>Indulás - Tier B közepe: 700 P</h3>
+            <br>
+            <table>
+                <tr>
+                  <th>Tier Kategória</th>
+                  <th>Pontok</th>
+                </tr>
+                <tr>
+                  <td>Tier S+</td>
+                  <td>1201 -</td>
+                </tr>
+                <tr>
+                  <td>Tier S</td>
+                  <td>1001 - 1200</td>
+                </tr>
+                <tr>
+                  <td>Tier A</td>
+                  <td>801 - 1000</td>
+                </tr>
+                <tr>
+                  <td>Tier B</td>
+                  <td>601 - 800</td>
+                </tr>
+                <tr>
+                  <td>Tier C</td>
+                  <td>401  - 600</td>
+                </tr>
+                <tr>
+                  <td>Tier D</td>
+                  <td>251  - 400</td>
+                </tr>
+                <tr>
+                  <td>Tier E</td>
+                  <td>0 - 250</td>
+                </tr>
+            </table>
+            <br>
+            <h3>A pontszámok alapján az előrekalkulált tier balance:</h3>
+            <br>
+            <table>
+                <tr>
+                  <th>Játékos</th>
+                  <th>Össz pontszám</th>
+                  <th>Tier Rank</th>
+                </tr>
+                <tr>
+                  <td>Kubu</td>
+                  <td>800 P</td>
+                  <td>B</td>
+                </tr>
+                <tr>
+                  <td>Northern</td>
+                  <td>900 P</td>
+                  <td>A</td>
+                </tr>
+                <tr>
+                  <td>Magnus</td>
+                  <td>950 P</td>
+                  <td>A</td>
+                </tr>
+                <tr>
+                  <td>Piter</td>
+                  <td>1000 P</td>
+                  <td>A</td>
+                </tr>
+                <tr>
+                  <td>Waka</td>
+                  <td>550 P</td>
+                  <td>C</td>
+                </tr>
+                <tr>
+                  <td>Santi</td>
+                  <td>500 P</td>
+                  <td>C</td>
+                </tr>
+            </table>
+            <br>
+            <h4 style="color: orangered;">Bajnokság mód:</h3>
+                <p>Szavazás alatt: ,Milyen legyen a következő (egyenes kieséses, upper-lower bracket stb...)</p>
 
         </div>
 
