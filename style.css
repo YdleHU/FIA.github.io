@@ -1,9 +1,9 @@
 body {
     font-family: 'Istok Web', sans-serif;
 
-    background: url("fc1.jpg") no-repeat;
-    background-size: cover;
-    min-height: 100%;
+    background: url("pics/fia_bg2.jpg") no-repeat;
+    background-size: contain;
+
     margin: 0;
 }
 
